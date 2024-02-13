@@ -8,6 +8,14 @@ pnpm-debug.log*
 lerna-debug.log*
 package-lock.json
 node_modules
+<<<<<<< HEAD
+package-lock.json
+
+
+
+
+
+=======
 dist
 dist-ssr
 *.local
@@ -22,3 +30,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+>>>>>>> 2406dc898a69fd35fd66d27a39b57ab6651f9228
