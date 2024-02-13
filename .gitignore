@@ -1,33 +1,14 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+
 package-lock.json
 node_modules
-<<<<<<< HEAD
-package-lock.json
 
 
 
 
 
-=======
-dist
-dist-ssr
-*.local
+
+
+
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
->>>>>>> 2406dc898a69fd35fd66d27a39b57ab6651f9228
+
