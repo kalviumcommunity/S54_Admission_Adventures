@@ -10,8 +10,8 @@ const connectDB= async ()=>{
 
     }catch(error){
         console.log("error:",error)
-        console.log("DataBase have Disconnected ,Please check the errors.")        
+        console.log("DataBase have Disconnected ,Please check the errors.")         
     }
-}
+}                       
 
 module.exports=connectDB;

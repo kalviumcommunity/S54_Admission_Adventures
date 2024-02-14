@@ -1,0 +1,188 @@
+[
+
+    {
+      "state":"Andhra pradhesh",
+      "name": "Vignan's Institute of Technology and Science",
+      "fee": "₹1,50,000",
+      "NIRF_ranking": "52",
+      "highest_package": "₹12,00,000",
+      "average_package": "₹5,50,000",
+      "ratings": "4.5"
+    },
+    {"state":"Andhra pradhesh",
+      "name": "Sri Venkateswara University",
+      "fee": "₹1,20,000",
+      "NIRF_ranking": "37",
+      "highest_package": "₹10,50,000",
+      "average_package": "₹4,80,000",
+      "ratings": "4.2"
+    },
+    {"state":"Andhra pradhesh",
+      "name": "GITAM University",
+      "fee": "₹1,80,000",
+      "NIRF_ranking": "65",
+      "highest_package": "₹11,80,000",
+      "average_package": "₹5,70,000",
+      "ratings": "4.3"
+    },
+    {"state":"Andhra pradhesh",
+      "name": "Andhra University",
+      "fee": "₹1,30,000",
+      "NIRF_ranking": "48",
+      "highest_package": "₹10,00,000",
+      "average_package": "₹5,20,000",
+      "ratings": "4.0"
+    },
+    {
+      "state":"Telangana",
+      "name": "International Institute of Information Technology, Hyderabad (IIIT-H)",
+      "fee": "₹2,00,000",
+      "NIRF_ranking": "39",
+      "highest_package": "₹15,00,000",
+      "average_package": "₹7,50,000",
+      "ratings": "4.6"
+    },
+    { "state":"Telangana",
+      "name": "Jawaharlal Nehru Technological University, Hyderabad (JNTU-H)",
+      "fee": "₹1,80,000",
+      "NIRF_ranking": "55",
+      "highest_package": "₹12,50,000",
+      "average_package": "₹6,00,000",
+      "ratings": "4.4"
+    },
+    { "state":"Telangana",
+      "name": "Osmania University",
+      "fee": "₹1,50,000",
+      "NIRF_ranking": "43",
+      "highest_package": "₹11,80,000",
+      "average_package": "₹5,70,000",
+      "ratings": "4.1"
+    },
+    { "state":"Telangana",
+      "name": "BITS Pilani Hyderabad Campus",
+      "fee": "₹2,20,000",
+      "NIRF_ranking": "30",
+      "highest_package": "₹16,00,000",
+      "average_package": "₹7,80,000",
+      "ratings": "4.7"
+    },
+    {
+      "state":"Tamilnadu",
+      "name": "Anna University",
+      "fee": "₹1,00,000",
+      "NIRF_ranking": "14",
+      "highest_package": "₹20,00,000",
+      "average_package": "₹8,50,000",
+      "ratings": "4.8"
+    },
+    {
+      "state":"Tamilnadu",
+
+      "name": "Vellore Institute of Technology (VIT)",
+      "fee": "₹2,20,000",
+      "NIRF_ranking": "19",
+      "highest_package": "₹18,50,000",
+      "average_package": "₹7,80,000",
+      "ratings": "4.6"
+    },
+    {
+      "state":"Tamilnadu",
+
+      "name": "SRM Institute of Science and Technology",
+      "fee": "₹1,80,000",
+      "NIRF_ranking": "25",
+      "highest_package": "₹16,50,000",
+      "average_package": "₹7,00,000",
+      "ratings": "4.4"
+    },
+    {
+      "state":"Tamilnadu",
+
+      "name": "National Institute of Technology, Trichy (NITT)",
+      "fee": "₹1,50,000",
+      "NIRF_ranking": "9",
+      "highest_package": "₹19,00,000",
+      "average_package": "₹8,00,000",
+      "ratings": "4.7"
+    }
+,
+    {
+      "state":" Karnataka",
+      "name": "Indian Institute of Science (IISc), Bangalore",
+      "fee": "₹1,50,000",
+      "NIRF_ranking": "1",
+      "highest_package": "₹25,00,000",
+      "average_package": "₹10,00,000",
+      "ratings": "4.9"
+    },
+    {
+      "state":" Karnataka",
+
+      "name": "International Institute of Information Technology Bangalore (IIIT-B)",
+      "fee": "₹2,20,000",
+      "NIRF_ranking": "12",
+      "highest_package": "₹20,00,000",
+      "average_package": "₹8,50,000",
+      "ratings": "4.7"
+    },
+    {
+      "state":" Karnataka",
+
+      "name": "Manipal Institute of Technology (MIT), Manipal",
+      "fee": "₹2,00,000",
+      "NIRF_ranking": "4",
+      "highest_package": "₹22,00,000",
+      "average_package": "₹9,50,000",
+      "ratings": "4.8"
+    },
+    {
+      "state":" Karnataka",
+
+      "name": "National Institute of Technology Karnataka (NITK), Surathkal",
+      "fee": "₹1,80,000",
+      "NIRF_ranking": "7",
+      "highest_package": "₹21,00,000",
+      "average_package": "₹9,00,000",
+      "ratings": "4.6"
+    }
+,    {
+  "state":" Kerala",
+      "name": "Indian Institute of Technology (IIT), Palakkad",
+      "fee": "₹1,80,000",
+      "NIRF_ranking": "15",
+      "highest_package": "₹24,00,000",
+      "average_package": "₹9,50,000",
+      "ratings": "4.7"
+    },
+    {
+  "state":" Kerala",
+
+      "name": "National Institute of Technology Calicut (NITC)",
+      "fee": "₹1,50,000",
+      "NIRF_ranking": "8",
+      "highest_package": "₹20,50,000",
+      "average_package": "₹8,50,000",
+      "ratings": "4.6"
+    },
+    {
+  "state":" Kerala",
+
+      "name": "Cochin University of Science and Technology (CUSAT)",
+      "fee": "₹1,30,000",
+      "NIRF_ranking": "27",
+      "highest_package": "₹18,00,000",
+      "average_package": "₹7,50,000",
+      "ratings": "4.3"
+    },
+    {
+  "state":" Kerala",
+
+      "name": "Rajiv Gandhi Institute of Technology (RIT), Kottayam",
+      "fee": "₹1,20,000",
+      "NIRF_ranking": "42",
+      "highest_package": "₹17,50,000",
+      "average_package": "₹7,00,000",
+      "ratings": "4.1"
+    }
+  ]
+
