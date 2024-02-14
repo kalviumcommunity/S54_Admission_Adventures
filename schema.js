@@ -9,7 +9,7 @@ const collageData=new mongoose.Schema({
     require:true
   },
   fee:{
-    type:Number,
+    type:String,
     require:true
   },
   NIRF_ranking:{
@@ -17,11 +17,11 @@ const collageData=new mongoose.Schema({
     require:true
   },
   highest_package:{
-    type:Number,
+    type:String,
     require:true
   },
   average_package:{
-    type:Number,
+    type:String,
     require:true
   },
   ratings:{
@@ -29,5 +29,5 @@ const collageData=new mongoose.Schema({
     require:true
   },
 })
-const dataModel=mongoose.model("CollageData", collageData);
+const dataModel=mongoose.model("collegedetails", collageData);
 module.exports=dataModel
