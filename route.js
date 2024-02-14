@@ -34,7 +34,7 @@ router.post("/createcolleges", async (req, res) => {
     });
   } catch (err) {
     console.error(err); // Log the error
-    res.send({ message: false, error: " Error" });
+    res.status(500).send({ message: false, error: "Internal Server Error" });
   }
 });
 
