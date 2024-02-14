@@ -37,7 +37,7 @@ router.post("/createcolleges", async (req, res) => {
 });
 
 
-router.put("/updatecolleges/:id", async (req, res) => {
+router.put("/updatecollege/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const newData = req.body;
@@ -57,7 +57,7 @@ router.put("/updatecolleges/:id", async (req, res) => {
 });
 
 
-router.delete("/deletecolleges/:id", async (req, res) => {
+router.delete("/deletecollege/:id", async (req, res) => {
   try {
     const id = req.params.id;
     const deletedCollege = await dataModel.findByIdAndDelete(id);
