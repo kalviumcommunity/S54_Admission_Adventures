@@ -1,12 +1,11 @@
-
 import './App.css';
-import HomePage from './Components/HomePage';
+import DummyData from './Components/DummyData';
 
 function App() {
   return (
     <div className="App">
-      
-      <HomePage />
+      {/* <HomePage /> */}
+      <DummyData />
     </div>
   );
 }

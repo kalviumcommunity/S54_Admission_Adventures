@@ -1,0 +1,68 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  /* background-color: rgb(204,213,174); */
+}
+
+.DummypageQuote{
+  font-size: 2rem;
+  padding-left: 25vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.DummyPage{
+  display: flex;
+  font-size: 1.4rem;
+  align-items: baseline;
+}
+img{
+  width:480px;
+  border-radius: 10px;
+}
+.DummyData{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+}
+#samedata1,#samedata2,#samedata3,#samedata4,#samedata5,#samedata6{
+  background-color:transparent;
+  
+  width: 20vw;
+  
+}
+.bottomdata{
+  background:rgb(0,48,73);
+  margin-left: 8vw;
+  width: 25vw;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: white;
+  word-spacing: 5px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  
+}
+.NameOfCollege{
+  padding-left: 2vw;
+}
+
+#RateButtton{
+  width: 15vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  /* padding-bottom: px; */
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-top:2px;
+  border-radius: 15px;
+
+}
+#RateButtton:hover{
+  background-color: aqua;
+  color: white;
+  border-color: aqua;
+}
