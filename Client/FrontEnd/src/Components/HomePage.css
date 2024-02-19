@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap'); 
+*{
+  background-image: url('https://i.pinimg.com/564x/9e/5a/e1/9e5ae13152d286f33ef72d2b85a5dc6c.jpg');
+  
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size:100vw 100vh;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  
+}
+
+
+.HomePage_navbar{
+  display: flex;
+}
+
+.tittle{
+  font-size: 3rem;
+  padding-left: 30vw;
+  width: 80vw;
+  color:rgb(46,37,50);
+  font-family: 'Playfair Display SC',sans-serif;
+}
+
+
+.HomePage_Quote{
+  color: rgb(36,85,1);
+  margin-top: 19vh;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  width: 30vw;
+  margin-left: 8vw;
+  font-family: 'Rubik Doodle Shadow', sans-serif;
+  font-weight: 600;
+  background: none;
+}
+
+.Home_explore_btn {
+  width: 10vw;
+  height: 7vh;
+  margin-top: 15vh;
+  margin-left: 45vw;
+  border-radius: 20px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #4CAF50; 
+  color: #4CAF50; 
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+
+.Home_explore_btn:hover {
+  background-color: #4CAF50; 
+
+  color: white;
+  border-color: transparent; 
+}
+
+
+.Home_explore_btn:focus {
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.Home_explore_btn {
+  animation: fadeInOut 0.5s ease-in-out;
+}
+.Home_para {
+  width: 55vw;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  line-height: 5vh;
+  font-size: 1.35rem;
+  background: none;
+  font-family: 'Philosopher', sans-serif;
+  letter-spacing: 2px;
+  color: rgb(95, 15, 64);
+  font-weight: 900;
+}

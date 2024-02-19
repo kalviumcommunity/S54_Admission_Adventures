@@ -1,14 +1,14 @@
 
-import './App.css'
+import './App.css';
+import HomePage from './Components/HomePage';
 
 function App() {
-
-
   return (
-    <>
-     <h1>Hello World</h1>
-    </>
-  )
+    <div className="App">
+      
+      <HomePage />
+    </div>
+  );
 }
 
-export default App
+export default App;
