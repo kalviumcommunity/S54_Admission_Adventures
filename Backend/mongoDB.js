@@ -5,7 +5,7 @@ const uri = process.env.mongoURI; // Using the mongoURI from environment variabl
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(process.env.mongoURI);
+        await mongoose.connect("mongodb+srv://Mohan_Kumar:mohan01012005@cluster0.sdsvsnw.mongodb.net/admission_adventures");
         console.log("Database has been successfully connected");
     } catch (error) {
         console.error("Error:", error);
