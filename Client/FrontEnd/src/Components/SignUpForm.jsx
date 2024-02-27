@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SignUpForm.css'; 
+import axios from "axios"
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -13,11 +14,23 @@ const SignUpForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    console.log(formData);
-    
+    try {
+        const usercheck = await axios.post("​http://localhost:3000/login", formData);
+        console.log(usercheck.data.Message);
+
+        if (usercheck.data.Message === "Login success") {
+            alert("Login success");
+            console.log(formData);
+        } else {
+            alert("Please enter correct credentials"); // corrected spelling of "credentials"
+        }
+    } catch (error) {
+        console.error('Error:', error); // changed console.log to console.error for better error handling
+    }
+
+
     setFormData({
       name: '',
       email: '',

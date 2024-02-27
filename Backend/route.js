@@ -101,5 +101,26 @@ router.post("/createUser", async (req, res) => {
   }
 });
 
+
+
+router.post("/login", async (req, res) => {
+  try {
+    const {email,password} = req.body;
+    const user = await userDataModel.findOne({email:email,password:password}
+      );
+      
+      if(user && user.email==email && user.password==password){
+        res.json({success:true,Message:"Login success"})
+      }else{
+        res.json({Message:"Please Enter correct credencials"})
+      }
+      
+  
+  } catch (err) {
+    console.error(err);
+    res.status(500).send({ message: false, error: "Internal Server Error" });
+  }
+});
+
 module.exports=router
 // crteating a route for authentication process
