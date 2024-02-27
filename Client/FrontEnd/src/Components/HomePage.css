@@ -5,14 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap'); 
 *{
-  background-image: url('https://i.pinimg.com/564x/9e/5a/e1/9e5ae13152d286f33ef72d2b85a5dc6c.jpg');
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-size:100vw 100vh;
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
   
+}
+body{
+  background-image: url('https://i.pinimg.com/564x/9e/5a/e1/9e5ae13152d286f33ef72d2b85a5dc6c.jpg');
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size:100vw 100vh;
+
 }
 
 
@@ -30,7 +33,7 @@
 
 
 .HomePage_Quote{
-  color: rgb(36,85,1);
+  color: rgb(36,85,1.5);
   margin-top: 19vh;
   letter-spacing: 3px;
   font-size: 2.5rem;
