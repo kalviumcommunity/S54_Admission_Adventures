@@ -44,11 +44,12 @@ body{
   background: none;
 }
 
-.Home_explore_btn {
-  width: 10vw;
+.HomeSignup{
+  width: 20vw;
+  padding-bottom: 20px;
   height: 7vh;
   margin-top: 15vh;
-  margin-left: 45vw;
+ 
   border-radius: 20px;
   cursor: pointer;
   background: none;
@@ -56,10 +57,27 @@ body{
   color: #4CAF50; 
   font-size: 16px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-left: 50vw;
 }
 
 
-.Home_explore_btn:hover {
+.HomeSighnin{
+  width: 20vw;
+  padding-bottom: 20px;
+  height: 7vh;
+  margin-top: 15vh;
+ 
+  border-radius: 20px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid #4CAF50; 
+  color: #4CAF50; 
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-right: 55vw;
+  margin-left: -20vw;
+}
+.HomeSignup:hover,.HomeSighnin:hover{
   background-color: #4CAF50; 
 
   color: white;
@@ -67,7 +85,7 @@ body{
 }
 
 
-.Home_explore_btn:focus {
+.HomeSignup:focus,.HomeSighnin:focus {
   box-shadow: 0 0 5px #4CAF50;
 }
 
@@ -85,7 +103,7 @@ body{
 }
 
 
-.Home_explore_btn {
+.HomeSignup,.HomeSighnin {
   animation: fadeInOut 0.5s ease-in-out;
 }
 .Home_para {

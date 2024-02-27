@@ -17,7 +17,7 @@ const SignUpForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const usercheck = await axios.post("​http://localhost:3000/login", formData);
+        const usercheck = await axios.post("https://admission-adventure.onrender.com/login", formData);
         console.log(usercheck.data.Message);
 
         if (usercheck.data.Message === "Login success") {
