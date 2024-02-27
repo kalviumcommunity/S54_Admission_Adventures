@@ -1,16 +1,16 @@
-require("dotenv").config()
+require("dotenv").config();
 
-const mongoose=require("mongoose")
-const connectDB= async ()=>{
-    try{
-       
-        await mongoose.connect("mongodb+srv://Mohan_Kumar:mohan01012005@cluster0.sdsvsnw.mongodb.net/admission_adventures")
-        console.log("DataBase have been succesfully Connected")
+const mongoose = require("mongoose");
+const uri = process.env.mongoURI; // Using the mongoURI from environment variables
 
-    }catch(error){
-        console.log("error:",error)
-        console.log("DataBase have Disconnected ,Please check the errors.")         
-    }
-}                       
+const connectDB = async () => {
+    try {
+        await mongoose.connect(process.env.mongoURI);
+        console.log("Database has been successfully connected");
+    } catch (error) {
+        console.error("Error:", error);
+        console.log("Database disconnected. Please check the errors.");
+    }
+};
 
-module.exports=connectDB;
+module.exports = connectDB;

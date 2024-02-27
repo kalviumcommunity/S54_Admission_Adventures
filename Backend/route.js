@@ -1,8 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const dataModel = require("./schema");
-
+const {dataModel,userDataModel} = require("./schema");
 router.use(express.json());
+
+
+
+
+
+
 
 
 router.get("/colleges", async (req, res) => {
@@ -76,3 +81,25 @@ router.delete("/deletecollege/:id", async (req, res) => {
 });
 
 module.exports = router;
+
+
+////////////////////////////////////////////////////////////////////
+//////////  User model///////////////
+router.post("/createUser", async (req, res) => {
+  try {
+    const data = req.body;
+    const user = new userDataModel(data);
+    await user.save();
+    res.send({
+      message: true,
+      data: "New user is created successfully",
+      User: user,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send({ message: false, error: "Internal Server Error" });
+  }
+});
+
+module.exports=router
+// crteating a route for authentication process

@@ -29,5 +29,18 @@ const collageData=new mongoose.Schema({
     require:true
   },
 })
+
+const signupSchema=mongoose.Schema({
+  name:String,
+        dateOfBirth: String,
+        state: String,
+        gender: String,
+        yearOf12thPass: String,
+        phone: String,
+        email: String,
+        password: String,
+        confirmPassword: String
+})
+const userDataModel=mongoose.model("userData",signupSchema);
 const dataModel=mongoose.model("collegedetails", collageData);
-module.exports=dataModel
+module.exports={dataModel,userDataModel}

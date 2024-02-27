@@ -1,26 +1,26 @@
-const express=require('express')
-require("dotenv").config()
-const cors=require("cors")
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const connectDB=require("./mongoDB")
 const router=require("./route")
-const app=express()
-app.use(express.json())
-app.use(cors())
-PORT=process.env.PORT||3001
-const connectDB = require( './mongoDB');
+require('dotenv').config();
 connectDB()
-app.use("/",router)
-app.get("/",(req,res)=>{
-  res.send("My server is started ")
-  console.log('My server is started');
-  
-})
-app.get('/ping',(req,res)=>{
-  res.send('pong')
-})
+const app = express();
+const PORT = process.env.PORT || 3001;
 
+app.use(cors());
+app.use(bodyParser.json());
+app.use(router)
 
+app.get('/', (req, res) => {
+  res.send('My server is started');
+});
 
-app.listen(PORT,()=>{
-  console.log(`http://localhost:${PORT}/`);
-  
-})
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
