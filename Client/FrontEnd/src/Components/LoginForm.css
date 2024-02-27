@@ -1,0 +1,88 @@
+/* Form.css */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&family=Russo+One&display=swap');
+
+.form-container {
+  max-width: 550px; /* Increased width */
+  margin: 0 auto;
+  height: 100vh;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Russo One', sans-serif;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  display: block;
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  height: 35px; 
+}
+
+input[type="date"] {
+  width: calc(100% - 22px);
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+}
+
+/* Make placeholders more visible */
+input::placeholder, select::placeholder {
+  color:black;
+}
+
+input[type="password"]:invalid {
+  border-color: white;
+}
+
+input[type="password"]:valid {
+  border-color: green;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  font-family: 'Rowdies', sans-serif;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  width: 12vw;
+  margin-left: 15vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px; 
+  border-color: white;
+}
+
+button:hover{
+  background-color: #0056b3;
+  color: black;
+  border-color:black;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+  border-color: #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  color:darkgray; /* Set error text color to red */
+  
+  font-size: 15px;
+  margin-bottom: 10px;
+}
