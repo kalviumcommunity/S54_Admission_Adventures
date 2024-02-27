@@ -6,8 +6,8 @@ import SignUpForm from './Components/SignUpForm';
 function App() {
   return (
     <div className="App">
-      <LoginForm></LoginForm>
-      {/* <SignUpForm></SignUpForm> */}
+      {/* <LoginForm></LoginForm> */}
+      <SignUpForm></SignUpForm>
       {/* <HomePage /> */}
     </div>
   );

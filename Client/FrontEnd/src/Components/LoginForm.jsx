@@ -96,7 +96,7 @@ const LoginForm = () => {
     if (validateForm()) {
       console.log(formData)
       try {
-        const response=await axios.post("http://localhost:3000/createUser",formData)
+        const response=await axios.post("https://admission-adventure.onrender.com/createUser",formData)
         console.log(response);
       } catch (error) {
         
