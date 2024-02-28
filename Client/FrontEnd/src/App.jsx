@@ -1,13 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-import Rotes from './Components/Rotes';
+
+
+import AllRoutes from "./Components/AllRoutes";
 
 
 
 function App() {
   return (
     <>
-     <Rotes/>
+    
+  <AllRoutes></AllRoutes>
     </>
   );
 }
