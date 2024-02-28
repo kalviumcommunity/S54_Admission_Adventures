@@ -1,39 +1,34 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&display=swap'); 
-*{
+* {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  
 }
-body{
+
+body {
   background-image: url('https://i.pinimg.com/564x/9e/5a/e1/9e5ae13152d286f33ef72d2b85a5dc6c.jpg');
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-size:100vw 100vh;
-
+  background-size: 100vw 100vh;
 }
 
-
-.HomePage_navbar{
+.HomePage_navbar {
   display: flex;
 }
 
-.tittle{
+.title {
   font-size: 3rem;
   padding-left: 30vw;
   width: 80vw;
-  color:rgb(46,37,50);
-  font-family: 'Playfair Display SC',sans-serif;
+  color: rgb(46, 37, 50);
+  font-family: 'Philosopher', sans-serif;
 }
 
-
-.HomePage_Quote{
-  color: rgb(36,85,1.5);
+.HomePage_Quote {
+  color: rgb(36, 85, 1.5);
   margin-top: 19vh;
   letter-spacing: 3px;
   font-size: 2.5rem;
@@ -44,51 +39,45 @@ body{
   background: none;
 }
 
-.HomeSignup{
+.buttons-container {
+  display: flex;
+  text-decoration: none;
+
+  margin-top: 18vh;
+  justify-content: center;
+}
+
+.HomeSignup,
+.HomeSignin {
   width: 20vw;
-  padding-bottom: 20px;
-  height: 7vh;
-  margin-top: 15vh;
- 
+  padding: 10px;
+  margin: 0 20px;
+  text-decoration: none;
   border-radius: 20px;
   cursor: pointer;
   background: none;
-  border: 2px solid #4CAF50; 
-  color: #4CAF50; 
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  margin-left: 50vw;
+}
+ .HomeSignup{
+    
+   text-decoration: none;
 }
 
 
-.HomeSighnin{
-  width: 20vw;
-  padding-bottom: 20px;
-  height: 7vh;
-  margin-top: 15vh;
- 
-  border-radius: 20px;
-  cursor: pointer;
-  background: none;
-  border: 2px solid #4CAF50; 
-  color: #4CAF50; 
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  margin-right: 55vw;
-  margin-left: -20vw;
-}
-.HomeSignup:hover,.HomeSighnin:hover{
-  background-color: #4CAF50; 
-
+.HomeSignup:hover,
+.HomeSignin:hover {
+  background-color: #4CAF50;
   color: white;
-  border-color: transparent; 
+  border-color: transparent;
 }
 
-
-.HomeSignup:focus,.HomeSighnin:focus {
+.HomeSignup:focus,
+.HomeSignin:focus {
   box-shadow: 0 0 5px #4CAF50;
 }
-
 
 @keyframes fadeInOut {
   0% {
@@ -102,10 +91,11 @@ body{
   }
 }
 
-
-.HomeSignup,.HomeSighnin {
+.HomeSignup,
+.HomeSignin {
   animation: fadeInOut 0.5s ease-in-out;
 }
+
 .Home_para {
   width: 55vw;
   margin-top: 15vh;
