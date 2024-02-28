@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './SignUpForm.css'; 
-import axios from "axios"
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import './SignUpForm.css';
+import axios from "axios";
 
 const SignUpForm = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,19 +19,20 @@ const SignUpForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const usercheck = await axios.post("https://admission-adventure.onrender.com/login", formData);
-        console.log(usercheck.data.Message);
+      const usercheck = await axios.post("https://admission-adventure.onrender.com/login", formData);
+      console.log(usercheck.data.Message);
 
-        if (usercheck.data.Message === "Login success") {
-            alert("Login success");
-            console.log(formData);
-        } else {
-            alert("Please enter correct credentials"); // corrected spelling of "credentials"
-        }
+      if (usercheck.data.Message === "Login success") {
+        alert("Login success");
+        console.log(formData);
+        // Redirect to MainPage.jsx upon successful signup
+        navigate('/main'); // Use navigate instead of window.location.href
+      } else {
+        alert("Please enter correct credentials");
+      }
     } catch (error) {
-        console.error('Error:', error); // changed console.log to console.error for better error handling
+      console.error('Error:', error);
     }
-
 
     setFormData({
       name: '',
