@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-
 import './LoginForm.css';
-import axios from "axios"
+import axios from "axios";
+
 const LoginForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -95,16 +94,16 @@ const LoginForm = () => {
     return isValid;
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       console.log(formData)
       try {
-        const response=await axios.post("https://admission-adventure.onrender.com/createUser",formData)
+        const response = await axios.post("https://admission-adventure.onrender.com/createUser", formData)
         toast.success('Account Successfully Created!');
       } catch (error) {
-        
+        console.error('Error:', error);
       }
       setFormData({
         name: '',
@@ -121,9 +120,9 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="container">
       <h2>Create a New Account</h2>
-      <ToastContainer  style={{width:"55vw",fontSize:"20px"}}/>
+      <ToastContainer style={{ width: "55vw", fontSize: "20px" }} />
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
         {errors.name && <span className="error">{errors.name}</span>}
@@ -158,11 +157,11 @@ const LoginForm = () => {
         {errors.password && <span className="error">{errors.password}</span>}
         <input type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} placeholder="Confirm Password" required />
         {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
-        <button type="submit">Submit</button>
-
+<div style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
+<button type="submit">Submit</button>
+      <Link to="/signup" className='signup'>Sign Up Instead</Link>
+</div>
       </form>
-      <Link to="/signup">Sign Up Instead</Link>
-      
     </div>
   );
 };
