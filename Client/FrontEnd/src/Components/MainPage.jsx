@@ -22,7 +22,7 @@ const MainPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedState, setSelectedState] = useState(null);
   const [selectedCollege, setSelectedCollege] = useState(null);
-  const {id, setId,update,setUpdate} = useContext(AppContext); // State to hold the selected college ID
+  const {id, setId,update,setUpdate} = useContext(AppContext); 
   const navigate = useNavigate();
   const fetchColleges = async () => {
     try {
@@ -80,7 +80,7 @@ const MainPage = () => {
   return (
     <div className="main-page">
       <h2>Colleges List</h2>
-{/* console.log(update) */}
+
       <div className="search-container">
       
 
@@ -93,7 +93,7 @@ const MainPage = () => {
 
 
 
-        {/* <button onClick={handleSearchClick}>Search</button> */}
+        
         
       <Button colorScheme='green'  onClick={handleSearchClick}>Search</Button>
       <Button colorScheme='yellow' onClick={handleAddCollegeClick}>Add College</Button>
@@ -119,7 +119,7 @@ const MainPage = () => {
         <div className="college-list">
           {colleges
             .filter(college => college.state.toLowerCase() === selectedState.toLowerCase())
-            .slice(0, 200) // Limit to the first 10 colleges
+            .slice(0, 200) 
             .map((college, index) => (
               <div key={index} className="college">
                 <h3>{college.name}</h3>
