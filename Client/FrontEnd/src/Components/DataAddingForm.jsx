@@ -11,7 +11,7 @@ class DataAddingForm extends Component {
       averagePackage: '',
       highestPackage: '',
       ratings: '',
-      fees: '', // Changed field name from imageLink to fees
+      fees: '',
       isValid: false,
     };
   }
