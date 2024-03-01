@@ -9,13 +9,14 @@
   margin: 0%;
   box-sizing: border-box;
 }
-
-body {
+body{
   background-image: url('https://i.pinimg.com/564x/9e/5a/e1/9e5ae13152d286f33ef72d2b85a5dc6c.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
 }
+
 
 .HomePage_navbar {
   display: flex;

@@ -31,3 +31,10 @@
   color: black;
 }
 
+.statesName{
+ border: 1px solid;
+ width: 15vw;
+ font-size: 1.4rem;
+ cursor: pointer;
+ 
+}
