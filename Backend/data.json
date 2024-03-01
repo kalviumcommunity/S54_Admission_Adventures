@@ -1,188 +1,900 @@
 [
-
-    {
-      "state":"Andhra pradhesh",
-      "name": "Vignan's Institute of Technology and Science",
-      "fee": "₹1,50,000",
-      "NIRF_ranking": "52",
-      "highest_package": "₹12,00,000",
-      "average_package": "₹5,50,000",
-      "ratings": "4.5"
-    },
-    {"state":"Andhra pradhesh",
-      "name": "Sri Venkateswara University",
-      "fee": "₹1,20,000",
-      "NIRF_ranking": "37",
-      "highest_package": "₹10,50,000",
-      "average_package": "₹4,80,000",
-      "ratings": "4.2"
-    },
-    {"state":"Andhra pradhesh",
-      "name": "GITAM University",
-      "fee": "₹1,80,000",
-      "NIRF_ranking": "65",
-      "highest_package": "₹11,80,000",
-      "average_package": "₹5,70,000",
-      "ratings": "4.3"
-    },
-    {"state":"Andhra pradhesh",
-      "name": "Andhra University",
-      "fee": "₹1,30,000",
-      "NIRF_ranking": "48",
-      "highest_package": "₹10,00,000",
-      "average_package": "₹5,20,000",
-      "ratings": "4.0"
-    },
-    {
-      "state":"Telangana",
-      "name": "International Institute of Information Technology, Hyderabad (IIIT-H)",
-      "fee": "₹2,00,000",
-      "NIRF_ranking": "39",
-      "highest_package": "₹15,00,000",
-      "average_package": "₹7,50,000",
-      "ratings": "4.6"
-    },
-    { "state":"Telangana",
-      "name": "Jawaharlal Nehru Technological University, Hyderabad (JNTU-H)",
-      "fee": "₹1,80,000",
-      "NIRF_ranking": "55",
-      "highest_package": "₹12,50,000",
-      "average_package": "₹6,00,000",
-      "ratings": "4.4"
-    },
-    { "state":"Telangana",
-      "name": "Osmania University",
-      "fee": "₹1,50,000",
-      "NIRF_ranking": "43",
-      "highest_package": "₹11,80,000",
-      "average_package": "₹5,70,000",
-      "ratings": "4.1"
-    },
-    { "state":"Telangana",
-      "name": "BITS Pilani Hyderabad Campus",
-      "fee": "₹2,20,000",
-      "NIRF_ranking": "30",
-      "highest_package": "₹16,00,000",
-      "average_package": "₹7,80,000",
-      "ratings": "4.7"
-    },
-    {
-      "state":"Tamilnadu",
-      "name": "Anna University",
-      "fee": "₹1,00,000",
-      "NIRF_ranking": "14",
-      "highest_package": "₹20,00,000",
-      "average_package": "₹8,50,000",
-      "ratings": "4.8"
-    },
-    {
-      "state":"Tamilnadu",
-
-      "name": "Vellore Institute of Technology (VIT)",
-      "fee": "₹2,20,000",
-      "NIRF_ranking": "19",
-      "highest_package": "₹18,50,000",
-      "average_package": "₹7,80,000",
-      "ratings": "4.6"
-    },
-    {
-      "state":"Tamilnadu",
-
-      "name": "SRM Institute of Science and Technology",
-      "fee": "₹1,80,000",
-      "NIRF_ranking": "25",
-      "highest_package": "₹16,50,000",
-      "average_package": "₹7,00,000",
-      "ratings": "4.4"
-    },
-    {
-      "state":"Tamilnadu",
-
-      "name": "National Institute of Technology, Trichy (NITT)",
-      "fee": "₹1,50,000",
-      "NIRF_ranking": "9",
-      "highest_package": "₹19,00,000",
-      "average_package": "₹8,00,000",
-      "ratings": "4.7"
-    }
-,
-    {
-      "state":" Karnataka",
-      "name": "Indian Institute of Science (IISc), Bangalore",
-      "fee": "₹1,50,000",
-      "NIRF_ranking": "1",
-      "highest_package": "₹25,00,000",
-      "average_package": "₹10,00,000",
-      "ratings": "4.9"
-    },
-    {
-      "state":" Karnataka",
-
-      "name": "International Institute of Information Technology Bangalore (IIIT-B)",
-      "fee": "₹2,20,000",
-      "NIRF_ranking": "12",
-      "highest_package": "₹20,00,000",
-      "average_package": "₹8,50,000",
-      "ratings": "4.7"
-    },
-    {
-      "state":" Karnataka",
-
-      "name": "Manipal Institute of Technology (MIT), Manipal",
-      "fee": "₹2,00,000",
-      "NIRF_ranking": "4",
-      "highest_package": "₹22,00,000",
-      "average_package": "₹9,50,000",
-      "ratings": "4.8"
-    },
-    {
-      "state":" Karnataka",
-
-      "name": "National Institute of Technology Karnataka (NITK), Surathkal",
-      "fee": "₹1,80,000",
-      "NIRF_ranking": "7",
-      "highest_package": "₹21,00,000",
-      "average_package": "₹9,00,000",
-      "ratings": "4.6"
-    }
-,    {
-  "state":" Kerala",
-      "name": "Indian Institute of Technology (IIT), Palakkad",
-      "fee": "₹1,80,000",
-      "NIRF_ranking": "15",
-      "highest_package": "₹24,00,000",
-      "average_package": "₹9,50,000",
-      "ratings": "4.7"
-    },
-    {
-  "state":" Kerala",
-
-      "name": "National Institute of Technology Calicut (NITC)",
-      "fee": "₹1,50,000",
-      "NIRF_ranking": "8",
-      "highest_package": "₹20,50,000",
-      "average_package": "₹8,50,000",
-      "ratings": "4.6"
-    },
-    {
-  "state":" Kerala",
-
-      "name": "Cochin University of Science and Technology (CUSAT)",
-      "fee": "₹1,30,000",
-      "NIRF_ranking": "27",
-      "highest_package": "₹18,00,000",
-      "average_package": "₹7,50,000",
-      "ratings": "4.3"
-    },
-    {
-  "state":" Kerala",
-
-      "name": "Rajiv Gandhi Institute of Technology (RIT), Kottayam",
-      "fee": "₹1,20,000",
-      "NIRF_ranking": "42",
-      "highest_package": "₹17,50,000",
-      "average_package": "₹7,00,000",
-      "ratings": "4.1"
-    }
-  ]
-
+  {
+    "state": "Andhra Pradesh",
+    "name": "Anil Neerukonda Institute of Technology and Sciences",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 114,
+    "highest_package": "₹6,00,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Pragati Engineering College",
+    "fee": "₹1,10,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹5,50,000",
+    "average_package": "₹3,50,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Sri Vasavi Institute of Engineering and Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 121,
+    "highest_package": "₹5,00,000",
+    "average_package": "₹3,80,000",
+    "ratings": 4.0
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Nova College of Engineering & Technology",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 131,
+    "highest_package": "₹4,80,000",
+    "average_package": "₹3,60,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Raghu Engineering College",
+    "fee": "₹1,15,000",
+    "NIRF_ranking": 133,
+    "highest_package": "₹4,50,000",
+    "average_package": "₹3,30,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Sri Sai Aditya Institute of Science and Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹4,00,000",
+    "average_package": "₹3,70,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "G Pullaiah College of Engineering and Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹4,20,000",
+    "average_package": "₹3,50,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Sri Mittapalli Institute of Technology for Women",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹4,00,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Sri Vasireddy Venkatadri Institute of Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 156,
+    "highest_package": "₹4,30,000",
+    "average_package": "₹3,60,000",
+    "ratings": 4.1
+  },
+  {
+    "state": "Andhra Pradesh",
+    "name": "Sri Sunflower College of Engineering and Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 165,
+    "highest_package": "₹4,50,000",
+    "average_package": "₹3,40,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Vins Christian Women's College of Engineering",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 113,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Anjalai Ammal Mahalingam Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 118,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Thangavelu Engineering College",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Arulmurugan College of Engineering",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 125,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Erode Builder Educational Trust's Group of Institutions",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Gnanamani College of Engineering",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Nandha Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 135,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Infant Jesus College of Engineering and Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 138,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Sri Ramakrishna Institute of Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 4.0
+  },
+  {
+    "state": "Tamil Nadu",
+    "name": "Kongunadu College of Engineering and Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Kerala",
+    "name": "Al-Ameen Engineering College",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 111,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Kerala",
+    "name": "Amal Jyothi College of Engineering",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 119,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Kerala",
+    "name": "Federal Institute of Science and Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 122,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Kerala",
+    "name": "Mangalam College of Engineering",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 124,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Kerala",
+    "name": "Musaliar College of Engineering and Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 129,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Kerala",
+    "name": "Royal College of Engineering and Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 131,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Kerala",
+    "name": "Sree Buddha College of Engineering",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 136,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Kerala",
+    "name": "Travancore Engineering College",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 139,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Kerala",
+    "name": "Vimal Jyothi Engineering College",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 144,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Kerala",
+    "name": "Younus College of Engineering and Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 150,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Karnataka",
+    "name": "Mangalore Institute of Technology and Engineering",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Karnataka",
+    "name": "Adichunchanagiri Institute of Technology",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Karnataka",
+    "name": "Amruta Institute of Engineering and Management Sciences",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Karnataka",
+    "name": "Bapuji Institute of Engineering and Technology",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Karnataka",
+    "name": "Bellary Engineering College",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Karnataka",
+    "name": "Canara Engineering College",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Karnataka",
+    "name": "Dayananda Sagar College of Engineering",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Karnataka",
+    "name": "East West Institute of Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Karnataka",
+    "name": "Global Academy of Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Karnataka",
+    "name": "HKBK College of Engineering",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Punjab",
+    "name": "Sri Sukhmani Institute of Engineering & Technology",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Punjab",
+    "name": "Beant College of Engineering and Technology",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Punjab",
+    "name": "Shaheed Bhagat Singh State Technical Campus",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Punjab",
+    "name": "Sri Sai College of Engineering & Technology",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Punjab",
+    "name": "Gulzar Institute of Engineering and Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Punjab",
+    "name": "Sri Sai Group of Institutes",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Punjab",
+    "name": "Guru Nanak Dev Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Punjab",
+    "name": "Gulzar College of Engineering",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Punjab",
+    "name": "Sri Sukhmani Institute of Engineering and Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Punjab",
+    "name": "Beant College of Engineering and Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Telangana",
+    "name": "Nalgonda Institute of Technology and Science",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Telangana",
+    "name": "Sree Dattha Institute of Engineering and Science",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Telangana",
+    "name": "Vishwa Vishwani Institute of Systems and Management",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Telangana",
+    "name": "JB Institute of Engineering & Technology",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Telangana",
+    "name": "Mahatma Gandhi Institute of Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Telangana",
+    "name": "Nalla Malla Reddy Engineering College",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Telangana",
+    "name": "St. Martin's Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Telangana",
+    "name": "Sreenidhi Institute of Science and Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Telangana",
+    "name": "Anurag Group of Institutions",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Telangana",
+    "name": "Guru Nanak Institute of Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Rajiv Gandhi College of Engineering and Research",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Maharashtra",
+    "name": "MGM's Jawaharlal Nehru Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Maharashtra",
+    "name": "KJ Somaiya College of Engineering",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Thadomal Shahani Engineering College",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Saraswati Education Society's Saraswati College of Engineering",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Padmabhooshan Vasantraodada Patil Institute of Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Terna Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Pillai College of Engineering",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Shree L.R. Tiwari College of Engineering",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Maharashtra",
+    "name": "Datta Meghe College of Engineering",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Sagar Institute of Research and Technology",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Rustamji Institute of Technology",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Truba Institute of Engineering and Information Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Medicaps University",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Gwalior Engineering College",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Ujjain Engineering College",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Institute of Engineering and Technology, Devi Ahilya Vishwavidyalaya",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Sagar Institute of Science & Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Madhav Institute of Technology and Science",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Madhya Pradesh",
+    "name": "Acropolis Institute of Technology and Research",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },  {
+    "state": "Rajasthan",
+    "name": "Jaipur Engineering College and Research Centre",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Poornima College of Engineering",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Swami Keshvanand Institute of Technology, Management & Gramothan",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Poornima Institute of Engineering and Technology",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Rajasthan Institute of Engineering and Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Global Institute of Technology",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Jaipur National University",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Anand International College of Engineering",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Compucom Institute of Information Technology and Management",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Rajasthan",
+    "name": "Kautilya Institute of Technology & Engineering",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },  {
+    "state": "Uttar Pradesh",
+    "name": "ABES Engineering College",
+    "fee": "₹1,50,000",
+    "NIRF_ranking": 110,
+    "highest_package": "₹3,80,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Ajay Kumar Garg Engineering College",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 117,
+    "highest_package": "₹3,70,000",
+    "average_package": "₹3,20,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "ABES Institute of Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 120,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹2,90,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Galgotias College of Engineering and Technology",
+    "fee": "₹1,45,000",
+    "NIRF_ranking": 123,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Krishna Institute of Engineering and Technology",
+    "fee": "₹1,35,000",
+    "NIRF_ranking": 128,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.5
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Galgotias University",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 130,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.7
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "IIMT College of Engineering",
+    "fee": "₹1,40,000",
+    "NIRF_ranking": 134,
+    "highest_package": "₹3,50,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Greater Noida Institute of Technology",
+    "fee": "₹1,20,000",
+    "NIRF_ranking": 137,
+    "highest_package": "₹3,30,000",
+    "average_package": "₹2,80,000",
+    "ratings": 3.6
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Moradabad Institute of Technology",
+    "fee": "₹1,30,000",
+    "NIRF_ranking": 142,
+    "highest_package": "₹3,60,000",
+    "average_package": "₹3,00,000",
+    "ratings": 3.9
+  },
+  {
+    "state": "Uttar Pradesh",
+    "name": "Shiv Nadar University",
+    "fee": "₹1,25,000",
+    "NIRF_ranking": 148,
+    "highest_package": "₹3,40,000",
+    "average_package": "₹3,10,000",
+    "ratings": 3.8
+  }
+]

@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import './DataAddingForm.css';
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 const DataAddingForm = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -79,7 +80,8 @@ const DataAddingForm = () => {
           />
           {errors.fee && <p>This field is required</p>}
         </div>
-        <button type="submit">Submit</button>
+        
+        <Button colorScheme='whatsapp' type='submit'>Submit</Button>
       </form>
     </div>
   );
