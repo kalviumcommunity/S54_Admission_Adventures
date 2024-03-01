@@ -4,6 +4,17 @@ import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import RatingPopup from './RatingPopup';
 import { AppContext } from './ParentContext';
+import { Input } from '@chakra-ui/react'
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from '@chakra-ui/react';
+
+import { Card, CardHeader, CardBody, CardFooter ,Button, ButtonGroup} from '@chakra-ui/react';
+
 
 const MainPage = () => {
   const [colleges, setColleges] = useState([]);
@@ -71,29 +82,44 @@ const MainPage = () => {
       <h2>Colleges List</h2>
 {/* console.log(update) */}
       <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search by state..."
-          value={searchTerm}
-          onChange={handleSearchChange}
-        />
-        <button onClick={handleSearchClick}>Search</button>
+      
+
+
+
+
+  <Input variant='filled' placeholder='Search by state...'   value={searchTerm}
+          onChange={handleSearchChange}  type="text" />
+
+
+
+
+        {/* <button onClick={handleSearchClick}>Search</button> */}
+        
+      <Button colorScheme='green'  onClick={handleSearchClick}>Search</Button>
+      <Button colorScheme='yellow' onClick={handleAddCollegeClick}>Add College</Button>
+    
         <button onClick={handleAddCollegeClick}>Add College</button>
       </div>
 
       <div className="states-list">
         <h3>States:</h3>
-        <ul>
+      
+
+
+        <UnorderedList>
+
           {states.map((state, index) => (
-            <li key={index} onClick={() => handleStateClick(state)}>{state}</li>
+            <li  key={index} onClick={() => handleStateClick(state)}>{state}</li>
           ))}
-        </ul>
+        </UnorderedList>
+
+
       </div>
       {selectedState && (
         <div className="college-list">
           {colleges
             .filter(college => college.state.toLowerCase() === selectedState.toLowerCase())
-            .slice(0, 10) // Limit to the first 10 colleges
+            .slice(0, 200) // Limit to the first 10 colleges
             .map((college, index) => (
               <div key={index} className="college">
                 <h3>{college.name}</h3>
@@ -102,9 +128,18 @@ const MainPage = () => {
                 <p>Highest Package: {college.highest_package}</p>
                 <p>Fee: {college.fee}</p>
                 <p>Ratings: {college.ratings}</p>
-                <button onClick={()=>handleContext(college._id)}>Add Ratings</button> {/* Use setId function here */}
+                
+                
+                <Button  onClick={()=>handleContext(college._id)} colorScheme='cyan'>Add Ratings</Button>
               </div>
             ))}
+
+
+
+
+
+
+            
             <div style={{
               display:update ? "block" : 'none'
             }}>

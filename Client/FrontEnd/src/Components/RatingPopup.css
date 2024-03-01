@@ -1,3 +1,8 @@
+body{
+  background-color: rgb(209, 127, 127);
+  background-image: none;
+}
+
 .Datachangediv {
   position: fixed;
   top: 50%;
