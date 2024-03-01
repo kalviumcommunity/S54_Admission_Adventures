@@ -98,7 +98,7 @@ const MainPage = () => {
       <Button colorScheme='green'  onClick={handleSearchClick}>Search</Button>
       <Button colorScheme='yellow' onClick={handleAddCollegeClick}>Add College</Button>
     
-        <button onClick={handleAddCollegeClick}>Add College</button>
+        
       </div>
 
       <div className="states-list">
