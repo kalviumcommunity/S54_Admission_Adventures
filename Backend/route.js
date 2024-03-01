@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const {dataModel,userDataModel} = require("./schema");
+const Joi =require('joi')
 router.use(express.json());
 
 
@@ -26,7 +27,14 @@ router.get("/colleges", async (req, res) => {
 
 
 router.post("/createcolleges", async (req, res) => {
+
+
+
   try {
+    const {error}= JoiCollageDataSchema.validate(req.body);
+    if(error){
+      return res.json({success:false, Message:error.details[0].Message})
+    }
     const data = req.body;
     const newCollege = new dataModel(data);
     await newCollege.save();
@@ -44,6 +52,10 @@ router.post("/createcolleges", async (req, res) => {
 
 router.put("/updatecollege/:id", async (req, res) => {
   try {
+    const {error}= JoiCollageDataSchema.validate(req.body);
+    if(error){
+      return res.json({success:false, Message:error.details[0].Message})
+    }
     const id = req.params.id;
     const newData = req.body;
     const updatedCollege = await dataModel.findByIdAndUpdate(id, newData, { new: true });
@@ -87,6 +99,10 @@ module.exports = router;
 //////////  User model///////////////
 router.post("/createUser", async (req, res) => {
   try {
+    const {error}= JoiSignupSchema.validate(req.body);
+    if(error){
+      return res.json({success:false, Message:error.details[0].Message})
+    }
     const data = req.body;
     const user = new userDataModel(data);
     await user.save();
@@ -124,3 +140,27 @@ router.post("/login", async (req, res) => {
 
 module.exports=router
 // crteating a route for authentication process
+////////////////////////////////////////////////////////////
+////Joi validation
+// Joi Schemas for Validation
+const JoiCollageDataSchema = Joi.object({
+  state: Joi.string().required(),
+  name: Joi.string().required(),
+  fee: Joi.string().required(),
+  NIRF_ranking: Joi.number().required(),
+  highest_package: Joi.string().required(),
+  average_package: Joi.string().required(),
+  ratings: Joi.number().required()
+});
+
+const JoiSignupSchema = Joi.object({
+  name: Joi.string(),
+  dateOfBirth: Joi.string(),
+  state: Joi.string(),
+  gender: Joi.string(),
+  yearOf12thPass: Joi.string(),
+  phone: Joi.string(),
+  email: Joi.string().email(),
+  password: Joi.string(),
+  confirmPassword: Joi.string().valid(Joi.ref('password'))
+});
