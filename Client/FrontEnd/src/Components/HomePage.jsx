@@ -23,11 +23,9 @@ const HomePage = () => {
       <div className="buttons-container" style={{
         display:login ? "none" : "block"
       }}>
-        <Link to="/signup"
-           className="Signup">Sign up
-        </Link>
-        <Link to="/login" className="Login">Sign in </Link>
-        
+       
+        <Link to="/signup"><Button colorScheme='purple'>Sign Up</Button></Link>
+        <Link to="/login"><Button colorScheme='messenger' className="signinbtn">Sign In</Button></Link>
       </div><Link to="/main">
         <Button colorScheme='blue' style={{
         display:login ? "block" : "none"

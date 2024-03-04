@@ -24,7 +24,7 @@ try {
   if(UpdatedData){
     setUpdate(false)
     reset()
-    props.fetchdata()
+    props.fetchColleges()
 
   }
 } catch (error) {

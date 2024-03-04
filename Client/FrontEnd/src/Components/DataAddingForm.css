@@ -5,7 +5,9 @@
   border: 1px solid rgb(252, 250, 250);
   margin: 0 auto;
 }
-
+.form{
+  background-color: aqua;
+}
 .form-group {
   margin-bottom: 20px;
 }

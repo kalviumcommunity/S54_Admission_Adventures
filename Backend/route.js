@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const {dataModel,userDataModel} = require("./schema");
 const Joi =require('joi')
+const jwt=require('jsonwebtoken')
 router.use(express.json());
 
 
@@ -50,7 +51,7 @@ router.post("/createcolleges", async (req, res) => {
 });
 
 
-router.put("/updatecollege/:id", async (req, res) => {
+router.patch("/updatecollege/:id", async (req, res) => {
   try {
     const {error}= JoiCollageDataSchema.validate(req.body);
     if(error){
@@ -126,7 +127,8 @@ router.post("/login", async (req, res) => {
       );
       
       if(user && user.email==email && user.password==password){
-        res.json({success:true,Message:"Login success"})
+        const token=jsw.sign({uderID:user._id,email:user.email},process.env.SECRET_KEY,{expiresIn:'7d'})
+        res.json({success:true,Message:"Login success",token})
       }else{
         res.json({Message:"Please Enter correct credencials"})
       }

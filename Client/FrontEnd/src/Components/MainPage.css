@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&family=Rubik+Doodle+Shadow&family=Rubik+Mono+One&family=Rubik+Scribble&family=Russo+One&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
 .main-page {
   max-width: 800px;
   margin: 0 auto;
@@ -5,7 +14,11 @@
 }
 
 
-
+.logout{
+  margin-left: 68vw;
+  width: auto;
+  margin-top: -1vh;
+}
 .blurred {
   filter: blur(4px); /* Add blur effect when popup is shown */
 }
@@ -19,11 +32,17 @@
 .college {
   border: 1px solid #ddd;
   border-radius: 8px;
+  background-color: aqua;
   padding: 15px;
 }
 
-
-
+.searchbtn{
+  margin-left: 52vw;
+  margin-top: -14.5vh;
+}
+.input{
+  width: 10vw;
+}
 .college{
   color: black;
 }
@@ -31,10 +50,37 @@
   color: black;
 }
 
-.statesName{
- border: 1px solid;
- width: 15vw;
- font-size: 1.4rem;
- cursor: pointer;
- 
+
+
+
+.cards{
+  background-color: green;
+  width: 30vw;
+  padding-left: 15vw;
+  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue',sans-serif;
+}
+.cardbody{
+  width: 20vw;
+  cursor: pointer;
+}
+.statescard{
+  width: 40vw;
+  
+  
+  
+}
+.addcollegebtn{
+  margin-left: 60vw;
+}
+
+.states-list{
+  margin-left: -10vw;
+  border: 1px solid rgb(138, 70, 70);
+  border-radius: 10px;
+  background-color: navy;
+padding: 20px;
+  width: 83vw;
+  padding-left: 10px;
 }

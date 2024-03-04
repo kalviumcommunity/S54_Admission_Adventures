@@ -43,72 +43,14 @@
 .buttons-container {
   display: flex;
   text-decoration: none;
-
-  margin-top: 18vh;
+  margin-left: 15vw;
+  margin-top: 14vh;
   justify-content: center;
 }
 
 
-.Login{
-  width: 10vw;
-  padding: 10px;
-  padding-left: 35px;
-  margin: 0 20px;
-  text-decoration: none;
-  border-radius: 20px;
-  cursor: pointer;
-  
-  background: none;
-  border: 2px solid #4CAF50;
-  color: #4CAF50;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
- .Signup{
-  width: 10vw;
-  padding: 10px;
-  padding-left: 35px;
-  margin: 0 20px;
-  text-decoration: none;
-  border-radius: 20px;
-  cursor: pointer;
-  background: none;
-  border: 2px solid #4CAF50;
-  color: #4CAF50;
-  font-size: 16px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-   text-decoration: none;
-}
 
 
-.Signup:hover,
-.Login:hover {
-  background-color: #4CAF50;
-  color: white;
-  border-color: transparent;
-}
-
-.Signup:focus,
-.Login:focus {
-  box-shadow: 0 0 5px #4CAF50;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.Signup,
-.Login {
-  animation: fadeInOut 0.5s ease-in-out;
-}
 
 .Home_para {
   width: 55vw;
