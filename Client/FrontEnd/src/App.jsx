@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Fade } from '@chakra-ui/react';
 
 import AllRoutes from "./Components/AllRoutes";
+import { AppContext } from "./Components/ParentContext";
 
 
 
 function App() {
+  const {login, setLogin}=useContext(AppContext)
+  useEffect(()=>{
+    let data=localStorage.getItem("isLoggedIn")
+    if(data=="true"){
+      setLogin(true)
+    }else{
+      setLogin(false)
+
+    }
+  },[])
+
   return (
     <>
     <ChakraProvider>

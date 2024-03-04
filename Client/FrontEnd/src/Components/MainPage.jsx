@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 import { Card, CardHeader, CardBody, CardFooter ,Button, ButtonGroup} from '@chakra-ui/react';
+import { deleteCookie } from './Cookie';
 
 
 const MainPage = () => {
@@ -22,8 +23,9 @@ const MainPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedState, setSelectedState] = useState(null);
   const [selectedCollege, setSelectedCollege] = useState(null);
-  const {id, setId,update,setUpdate} = useContext(AppContext); 
+  const {id, setId,update,setUpdate,setLogin,login} = useContext(AppContext); 
   const navigate = useNavigate();
+
   const fetchColleges = async () => {
     try {
       const response = await axios.get('https://admission-adventure.onrender.com/colleges',);
@@ -39,6 +41,23 @@ const MainPage = () => {
       console.error('Error fetching colleges:', error);
     }
   };
+
+
+  const handleLogin=()=>{
+    if(login){
+      localStorage.setItem("isLoggedIn","false");
+      setLogin(false);
+      alert('logging out ')
+      deleteCookie("JWT")
+      localStorage.removeItem("LoginData")
+      deleteCookie("user")
+      navigate('/signup')
+    }
+  }
+console.log("login",login);
+const data=localStorage.getItem("isLoggedIn");
+console.log("data",data);
+
 
 
 
@@ -97,8 +116,9 @@ const MainPage = () => {
         
       <Button colorScheme='green'  onClick={handleSearchClick}>Search</Button>
       <Button colorScheme='yellow' onClick={handleAddCollegeClick}>Add College</Button>
+      <Button colorScheme='teal' onClick={handleLogin}>Log Out </Button>
     
-        <button onClick={handleAddCollegeClick}>Add College</button>
+        
       </div>
 
       <div className="states-list">
@@ -115,7 +135,7 @@ const MainPage = () => {
 
 
       </div>
-      {selectedState && (
+      {selectedState && login && (
         <div className="college-list">
           {colleges
             .filter(college => college.state.toLowerCase() === selectedState.toLowerCase())
