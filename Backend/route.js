@@ -3,6 +3,7 @@ const router = express.Router();
 const {dataModel,userDataModel} = require("./schema");
 const Joi =require('joi')
 const jwt=require('jsonwebtoken')
+require("dotenv").config()
 router.use(express.json());
 
 
@@ -121,9 +122,8 @@ router.post("/login", async (req, res) => {
     const {email,password} = req.body;
     const user = await userDataModel.findOne({email:email,password:password}
       );
-      
       if(user && user.email==email && user.password==password){
-        const token=jwt.sign({uderID:user._id,email:user.email},process.env.SECRET_KEY,{expiresIn:'7d'})
+        const token=jwt.sign({email:user.email},process.env.SECRET_KEY,{expiresIn:'7d'})
         res.json({success:true,Message:"Login success",token})
       }else{
         res.json({Message:"Please Enter correct credencials"})
