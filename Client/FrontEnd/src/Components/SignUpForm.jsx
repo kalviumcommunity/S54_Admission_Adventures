@@ -38,6 +38,9 @@ const SignUpForm = () => {
         const newData = { ...formData }; 
         document.cookie = `user=${formData.email}`;
         document.cookie = `JWT=${usercheck.data.token}`;
+        console.log(usercheck.data);
+        console.log(usercheck.data.token);
+        
         localStorage.setItem('LoginData', JSON.stringify(newData));
         localStorage.setItem('isLoggedIn', true);
 

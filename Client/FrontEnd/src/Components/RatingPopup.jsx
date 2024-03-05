@@ -44,7 +44,7 @@ try {
        
       <label className='text'>Add  Your Ratings:</label>
           <input className='input'
-            type="number"
+            type="text"
             name="ratings"
             {...register('ratings', {
               required: 'Enter rating',
