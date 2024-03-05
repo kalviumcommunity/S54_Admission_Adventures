@@ -80,8 +80,7 @@ const DataAddingForm = () => {
           />
           {errors.fee && <p>This field is required</p>}
         </div>
-        
-        <Button colorScheme='whatsapp' type='submit'>Submit</Button>
+        <Button colorScheme='telegram' type='submit'>Submit</Button>
       </form>
     </div>
   );

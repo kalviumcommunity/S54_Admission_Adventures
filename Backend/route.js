@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const {dataModel,userDataModel} = require("./schema");
 const Joi =require('joi')
+const jwt=require('jsonwebtoken')
 router.use(express.json());
 
 
@@ -50,17 +51,13 @@ router.post("/createcolleges", async (req, res) => {
 });
 
 
-router.put("/updatecollege/:id", async (req, res) => {
+router.patch("/updatecollege/:id", async (req, res) => {
   try {
-    const {error}= JoiCollageDataSchema.validate(req.body);
-    if(error){
-      return res.json({success:false, Message:error.details[0].Message})
-    }
     const id = req.params.id;
     const newData = req.body;
     const updatedCollege = await dataModel.findByIdAndUpdate(id, newData, { new: true });
     if (!updatedCollege) {
-      return res.status(404).send({ message: false, error: "College not found" });
+      return res.status(404).send({ message: "false in the upation of collage", error: "College not found" });
     }
     res.send({
       message: true,
@@ -126,7 +123,8 @@ router.post("/login", async (req, res) => {
       );
       
       if(user && user.email==email && user.password==password){
-        res.json({success:true,Message:"Login success"})
+        const token=jwt.sign({uderID:user._id,email:user.email},process.env.SECRET_KEY,{expiresIn:'7d'})
+        res.json({success:true,Message:"Login success",token})
       }else{
         res.json({Message:"Please Enter correct credencials"})
       }
@@ -150,7 +148,7 @@ const JoiCollageDataSchema = Joi.object({
   NIRF_ranking: Joi.number().required(),
   highest_package: Joi.string().required(),
   average_package: Joi.string().required(),
-  ratings: Joi.number().required()
+  ratings: Joi.string().required()
 });
 
 const JoiSignupSchema = Joi.object({

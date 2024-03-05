@@ -24,7 +24,7 @@ try {
   if(UpdatedData){
     setUpdate(false)
     reset()
-    props.fetchdata()
+    props.fetchColleges()
 
   }
 } catch (error) {
@@ -44,7 +44,7 @@ try {
        
       <label className='text'>Add  Your Ratings:</label>
           <input className='input'
-            type="number"
+            type="text"
             name="ratings"
             {...register('ratings', {
               required: 'Enter rating',

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
+import React, { useState, useContext, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom'; 
 import './SignUpForm.css';
 import axios from "axios";
+import { AppContext } from './ParentContext';
 
 const SignUpForm = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,6 +17,15 @@ const SignUpForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const { login, setLogin } = useContext(AppContext);
+
+  useEffect(() => {
+    let isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn === 'true') {
+      navigate('/');
+    }
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -24,9 +34,18 @@ const SignUpForm = () => {
 
       if (usercheck.data.Message === "Login success") {
         alert("Login success");
-        console.log(formData);
-        // Redirect to MainPage.jsx upon successful signup
-        navigate('/main'); // Use navigate instead of window.location.href
+        setLogin(true);
+        const newData = { ...formData }; 
+        document.cookie = `user=${formData.email}`;
+        document.cookie = `JWT=${usercheck.data.token}`;
+        console.log(usercheck.data);
+        console.log(usercheck.data.token);
+        
+        localStorage.setItem('LoginData', JSON.stringify(newData));
+        localStorage.setItem('isLoggedIn', true);
+
+        
+        navigate('/main'); 
       } else {
         alert("Please enter correct credentials");
       }
