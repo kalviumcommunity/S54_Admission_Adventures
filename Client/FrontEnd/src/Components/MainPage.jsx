@@ -62,7 +62,7 @@ const MainPage = () => {
     if (login) {
       localStorage.setItem("isLoggedIn", "false");
       setLogin(false);
-      alert("logging out ");
+      alert("You are logging out ");
       deleteCookie("JWT");
       localStorage.removeItem("LoginData");
       deleteCookie("user");
