@@ -1,19 +1,25 @@
 import React from 'react';
+import { Link,useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+
 import axios from 'axios';
 import './DataAddingForm.css';
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react';
 
 const DataAddingForm = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const navigate=useNavigate()
 
   const onSubmit = async (data) => {
     try {
       const response = await axios.post('https://admission-enquirey.onrender.com/createcolleges', data);
-      console.log(response.data);
-      console.log(data);
+      // console.log(response.data);
+      // console.log(data);
+      console.log('data added');
       
-      reset(); // Clear the form after successful submission
+
+      reset();
+      navigate('/main'); 
     } catch (error) {
       console.log(error);
     }
