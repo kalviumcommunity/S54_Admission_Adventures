@@ -1,3 +1,4 @@
+const { string } = require("joi");
 const mongoose=require("mongoose")
 const collageData=new mongoose.Schema({
   state:{
@@ -37,7 +38,7 @@ const signupSchema=mongoose.Schema({
         gender: String,
         yearOf12thPass: String,
         phone: String,
-        email: String,
+        email: string,
         password: String,
         confirmPassword: String
 })

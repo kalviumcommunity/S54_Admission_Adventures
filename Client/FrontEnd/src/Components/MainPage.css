@@ -5,7 +5,15 @@
   margin: 0%;
   box-sizing: border-box;
 }
+.dropdown{
+  text-align: center;
+  font-weight:800;
+  padding-bottom: 20px;
+  font-size: 1em;
 
+  margin-top: 50px;
+  width: 30vw;
+}
 
 .main-page {
   max-width: 800px;
@@ -27,13 +35,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  background-color: aqua;
+  
+  background-color: white;
+  z-index:-1;
 }
 
 .college {
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: aqua;
+  
   padding: 15px;
+
 }
 
 .searchbtn{

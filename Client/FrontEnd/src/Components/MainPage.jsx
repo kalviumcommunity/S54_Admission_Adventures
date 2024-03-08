@@ -4,26 +4,15 @@ import { useNavigate } from "react-router-dom";
 import "./MainPage.css";
 import RatingPopup from "./RatingPopup";
 import { AppContext } from "./ParentContext";
-import { Input, Grid } from "@chakra-ui/react"; // Import Grid from Chakra UI
-
-import {
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-  Text
-} from "@chakra-ui/react";
+import { Input, Grid } from "@chakra-ui/react";
 
 import {
   Card,
-  CardHeader,
   CardBody,
-  CardFooter,
   Button,
-  ButtonGroup,
+  Text,
+  Select,
 } from "@chakra-ui/react";
-import { deleteCookie } from "./Cookie";
 
 const MainPage = () => {
   const [colleges, setColleges] = useState([]);
@@ -31,7 +20,8 @@ const MainPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedState, setSelectedState] = useState(null);
   const [selectedCollege, setSelectedCollege] = useState(null);
-  const { id, setId, setLogin, login,setUpdate,update} = useContext(AppContext);
+  const [selectedNIRFRanking, setSelectedNIRFRanking] = useState(""); // Changed to string for dropdown
+  const { id, setId, setLogin, login, setUpdate, update } = useContext(AppContext);
   const navigate = useNavigate();
 
   const fetchColleges = async () => {
@@ -63,9 +53,7 @@ const MainPage = () => {
       localStorage.setItem("isLoggedIn", "false");
       setLogin(false);
       alert("You are logging out ");
-      deleteCookie("JWT");
       localStorage.removeItem("LoginData");
-      deleteCookie("user");
       navigate("/signup");
     }
   };
@@ -87,6 +75,10 @@ const MainPage = () => {
     setSelectedState(searchTerm);
   };
 
+  const handleNIRFRankingChange = (event) => {
+    setSelectedNIRFRanking(event.target.value);
+  };
+
   const handleAddCollegeClick = () => {
     navigate("/add-college");
   };
@@ -95,7 +87,7 @@ const MainPage = () => {
     <div className="main-page">
       <h2>Colleges List</h2>
       <Button colorScheme="cyan" onClick={handleLogin} className="logout">
-        Log Out{" "}
+        Log Out
       </Button>
 
       <div className="search-container">
@@ -125,23 +117,32 @@ const MainPage = () => {
         </Button>
       </div>
 
-      <Grid templateColumns="repeat(2, 1fr)" gap={4} className="states-list" bg={"aqua"}> {/* Adjusted Grid */}
+      <Grid templateColumns="repeat(2, 1fr)" gap={4} className="states-list" bg={"	rgb(169, 132, 103)"}>
         {states.map((item, id) => (
-          <Card bg={"aqua"} key={id} className="statescard">
-            <CardBody className="cardbody"  bg={"aqua"} onClick={() => handleStateClick(item)}>
-              <Text bg={"aqua"}  className="cards">{item}</Text>
+          <Card bg={"rgb(112, 141, 129)"} key={id} className="statescard">
+            <CardBody className="cardbody" bg={"rgb(112, 141, 129)"} onClick={() => handleStateClick(item)}>
+              <Text bg={"rgb(112, 141, 129)"} className="cards">{item}</Text>
             </CardBody>
           </Card>
         ))}
       </Grid>
 
-      {selectedState && login && (
+          <Select
+            placeholder="Select NIRF Ranking Range"
+            onChange={handleNIRFRankingChange}
+            value={selectedNIRFRanking}
+            className="dropdown">
+            <option value="">All</option>
+            <option value="100">100 - 120</option>
+            <option value="120">120 - 140</option>
+            <option value="140">140 - 160</option>
+            <option value="160">160 - 180</option>
+            <option value="180">180 - 200</option>
+          </Select>
+      {login && ( 
         <div className="college-list">
           {colleges
-            .filter(
-              (college) =>
-                college.state.toLowerCase() === selectedState.toLowerCase()
-            )
+            .filter((college) => (!selectedState || college.state.toLowerCase() === selectedState.toLowerCase()) && (!selectedNIRFRanking || (college.NIRF_ranking >= parseInt(selectedNIRFRanking) && college.NIRF_ranking < parseInt(selectedNIRFRanking) + 20)))
             .map((college, index) => (
               <div key={index} className="college">
                 <h2>{college.name}</h2>
@@ -153,7 +154,7 @@ const MainPage = () => {
                 <p>Ratings: {college.ratings}</p>
 
                 <Button
-                  onClick={() => {setId(college._id);setUpdate(true)}}
+                  onClick={() => { setId(college._id); setUpdate(true) }}
                   colorScheme="cyan"
                 >
                   Add Ratings

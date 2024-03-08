@@ -4,7 +4,7 @@ import HomePage from './HomePage';
 import LoginForm from './LoginForm';
 import SignUpForm from './SignUpForm';
 import MainPage from './MainPage';
-import DataAddingForm from './DataAddingForm'; // Import DataAddingForm
+import DataAddingForm from './DataAddingForm';
 
 function AllRoutes() {
   return (
