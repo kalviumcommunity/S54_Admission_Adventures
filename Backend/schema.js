@@ -38,7 +38,7 @@ const signupSchema=mongoose.Schema({
         gender: String,
         yearOf12thPass: String,
         phone: String,
-        email: string,
+        email: String,
         password: String,
         confirmPassword: String
 })
