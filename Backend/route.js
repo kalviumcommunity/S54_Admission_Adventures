@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const {dataModel,userDataModel} = require("./schema");
-const Joi =require('joi')
-const jwt=require('jsonwebtoken')
 require("dotenv").config()
 router.use(express.json());
+const Joi =require('joi')
+const jwt=require('jsonwebtoken')
 
 
 
@@ -29,9 +29,6 @@ router.get("/colleges", async (req, res) => {
 
 
 router.post("/createcolleges", async (req, res) => {
-
-
-
   try {
     const {error}= JoiCollageDataSchema.validate(req.body);
     if(error){
@@ -95,7 +92,7 @@ module.exports = router;
 
 ////////////////////////////////////////////////////////////////////
 //////////  User model///////////////
-router.post("/createUser", async (req, res) => {
+router.post("/createUser", async (req, res) =>{
   try {
     const {error}= JoiSignupSchema.validate(req.body);
     if(error){
